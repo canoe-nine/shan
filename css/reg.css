@@ -1,0 +1,246 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+video{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.hold{
+	padding: 70px 0 0 0;
+}
+.hold>.main{
+	width: 340px;
+	margin: 0 auto 0;
+}
+/* 选择注册类型 */
+.hold>.main>.seleType{
+	width: 340px;
+	font-size: 16px;
+	line-height: 45px;
+	margin: 0px 0px 10px 0px;
+	text-align: center;
+	overflow: hidden;
+}
+.hold>.main>.seleType>.type_tel{
+	width: 170px;
+	height: 45px;
+	background-color: rgb(215,32,32);
+	color: white;
+	float: left;
+	cursor:pointer;
+	margin-bottom: 10px;
+}
+.hold>.main>.seleType>.type_eml{
+	width: 170px;
+	height: 45px;
+	background-color: rgb(228,228,228);
+	color: rgb(131,131,131);
+	float: right;
+	cursor:pointer;
+	margin-bottom: 10px;
+}
+/* 手机注册表单 */
+.acc{
+	height: 60px;
+}
+.clasForm{
+	height: 36px;
+	width: 337px;
+	line-height: 36px;
+	font-size: 16px;
+	/*margin-top: 20px;*/
+	border: 1.5px solid #5a5a5a;
+	outline:none;
+	background-color: rgba(255,255,255,0.4);
+	text-indent: 1em;
+	color: #333;
+}
+/* 获取验证码 */
+.tel_cont{
+	position: relative;
+}
+.getInput{
+	width: 180px;
+	height: 42px;
+	border: 1.5px solid #5a5a5a;
+	background: rgba(255,255,255,0.4);
+	padding-left: 10px;
+	outline: none;
+	color: #333;
+	font-size: 16px;
+	float: left;
+}
+.getButton{
+	width: 121px;
+	height: 45px;
+	border: 1px solid #5a5a5a;
+	/*margin: 20px 0 0 0px;*/
+	outline: none;
+	cursor: pointer;
+	font-size: 16px;
+	float: right;
+}
+.getNum_txt{
+	position: absolute;
+	bottom: 102px;
+	left: 0px;
+}
+/* 接受协议 */
+#agree,#agree1{
+	color: #a6a6a6;
+	margin: 20px 10px 0 5px;
+	width: 14px;
+	height: 14px;
+}
+a{
+	color: #d72020;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/* 按钮 */
+.regist_btn,.login_btn{
+	width: 340px;
+	height: 40px;
+	margin: 10px 0 0 0px;
+	padding-left: 10px;
+	outline: none;
+	cursor: pointer;
+
+}
+#regist,#regist1{
+	font-size: 20px;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 2px;
+	background: linear-gradient(#ff695d,#ce0000);
+}
+#login,#login1{
+	background: rgba(0,0,0,0.5);
+	font-size: 18px;
+	color: #CCCCCC;
+	border: 1.5px solid #5a5a5a;
+}
+#login:hover{
+	border: 1.5px solid #d72020;
+}
+#login1:hover{
+	border: 1.5px solid #d72020;
+}
+.yi{
+	color: white;
+	margin: 10px auto;
+	text-align: center;
+}
+
+/* 邮箱注册表单 */
+.hold .main .eml_cont{
+	display: none;
+}
+
+.erwm{
+	position: relative;
+}
+.erwm img{
+	position: fixed;
+}
+.erwm>.dah{
+	right: 0;
+	bottom: 160px;
+}
+.erwm:hover>.xiaz{
+	display: block;
+}
+.erwm>.xiaz{
+	right: 10px;
+	bottom: 30px;
+	display: none;
+	animation: fadeInDown 0.3s both 0.3s;
+}
+.erwm>.xiaz:hover{
+	display: block;
+}
+@keyframes fadeInDown{
+	0%{
+	opacity: 0;
+	}
+	100%{
+	opacity: 1;
+	}
+}
+
+#index{
+	width: 105px;
+	height: 105px;
+	position: absolute;
+	top: 0;
+	left: 200px;
+}
+.i_a{
+	position: relative;
+	width: 105px;
+	height: 105px;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 1s;
+}
+.i_a img,.i_a a,.i_xiala{
+	position: absolute;
+	display: block;
+}
+.i_a a{
+	text-decoration: none;
+}
+.i_a .img1{
+	width: 155px;
+	top: -25px;
+	left: -25px;
+	animation: xuanzhuan 15s infinite linear;
+}
+.i_a a{
+	width: 105px;
+	height: 105px;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	line-height: 105px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 3px 3px 1px gold;
+}
+#index:hover .i_xiala{
+	opacity: 0;
+	transition: all 2s;
+}
+#index:hover .i_a{
+	opacity: 1;
+	transition: all 2s;
+	z-index: 2;
+}
+.i_xiala{
+	opacity: 1;
+	top: 0;
+	left: 0;
+	transition: all 1s;
+}
+@keyframes xuanzhuan{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}

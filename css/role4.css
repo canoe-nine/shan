@@ -1,0 +1,366 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*头部*/
+#navigate{
+	width: 100%;
+/*	margin: 0 auto 0;*/
+}
+#navigate .navigate1{
+	width: 100%;
+}
+#navigate>.navigate1>.nav-main{
+	width: 1200px;
+	height: 60px;
+	margin: 0 auto 0;
+	background: url('../img/img2/nav-bg.jpg');
+	position: relative;
+}
+#navigate>.navigate1>.nav-main>.touxiang{
+	display: inline-block;
+	position: absolute;
+	left: 80px;
+	width: 72px;
+	height: 72px;
+	top: 8px;
+	z-index: 25;
+}
+#navigate>.navigate1>.nav-main>.n_ul{
+	list-style: none;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	overflow: hidden;
+}
+
+
+
+/*主体*/
+.content{
+	width: 100%;
+	min-width: 1200px;
+	height: 815px;
+}
+.content>.bz{
+	width: 100%;
+	height: 815px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	/*display: none;*/
+}
+.content>.bz>.bz-bg{
+	width: 2025px;
+	margin: 0px auto;
+	height: 100%;
+	background-image: url(../img/img4/baizebg.png);
+	background-size: 100% 100%;
+	position: relative;
+	z-index: 9;
+}
+.content>.bz>.bz-cir{
+	width: 800px;
+	height: 800px;
+	position: absolute;
+    top: 30px;
+    left: 56px;
+    overflow: hidden;
+}
+.content>.bz>.bz-cir>.cir1{
+	width: 800px;
+	height: 800px;
+	background: url(../img/img4/cir1.png) no-repeat center top;
+	background-size: 100% 100%;
+	position: absolute;
+    top: 0;
+    left: 0;
+   	z-index: 10;
+   	animation: cir1Ani 72s linear 0s infinite;
+}
+.content>.bz>.bz-cir>.cir2{
+	width: 800px;
+	height: 800px;
+	background: url(../img/img4/cir2.png) no-repeat center top;
+	background-size: 100% 100%;
+	position: absolute;
+    top: 0;
+    left: 0;
+   	z-index: 11;
+   	animation: cir2Ani 72s linear 0s infinite;
+}
+.content>.bz>.bz-tu{
+	width: 1720px;
+	height: 853px;
+	margin: 0 auto;
+	margin-left: -7%;
+	background: url(../img/img4/baize.png) no-repeat center top;
+	background-size: 100% 100%;
+	position: absolute;
+    top: 0;
+    left: 0;
+   	z-index: 11;
+   	animation: fadeInLeft 0.3s both 0.3s;
+}
+.content>.bz>.bz-wen{
+	width: 1200px;
+	height: 100%;
+    position: absolute;
+    left: 0;
+    top: -245px;
+    bottom: 0;
+    right: 65px;
+    margin: auto;
+    z-index: 12;
+    animation: fadeInRight 0.3s both 0.3s;
+}
+.content>.bz>.bz-wen>.name{
+	width: 600px;
+	height: 115px;
+	position: absolute;
+	top: 218px;
+	right: 45px;
+	z-index: 12;
+}
+.content>.bz>.bz-wen>.name>img{
+	width: 100%;
+	width: 100%;
+}
+.content>.bz>.bz-wen>.cv{
+	position: absolute;
+	top: 235px;
+	right: 95px;
+	z-index: 12;
+	font-size: 15px;
+	color: white;
+	height: 70px;
+	line-height: 40px;
+	text-align: right;
+}
+.content>.bz>.bz-wen>.cv>p{
+	position: relative;
+	height: 40px;
+	widows: 150px;
+}
+.content>.bz>.bz-wen>.cv>div>{
+	height: 40px;
+	width: 150px;
+	position: relative;
+}
+.content>.bz>.bz-wen>.cv>div>span{
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/img4/qidai.png);
+	background-size: 100% 100%;
+	position: absolute;
+	top: 3px;
+	right: -45px;
+	z-index: 12;
+}
+.content>.bz>.bz-wen>.syn{
+	width: 600px;
+	height: 410px;
+	position: absolute;
+	top: 400px;
+	right: 40px;
+	z-index: 12;
+	background-image: url(../img/img4/rwjs.png);
+	background-size: 100% 100%;
+}
+.content>.bz>.bz-wen>.syn>div{
+	position: absolute;
+	top: 145px;
+	left: 80px;
+	font-size: 14px;
+}
+.content>.bz>.bz-wen>.vid{
+	position: absolute;
+    top: 730px;
+    left: 800px;
+	z-index: 13;
+}
+.content>.bz>.bz-wen>.vid>.sp{
+	width: 308px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px black;
+    position: relative;
+}
+.content>.bz>.bz-wen>.vid>.sp>.video{
+	width: 308px;
+    height: 170px;
+	background-image: url(../img/img4/hlvid.png);
+	background-size: 100% 100%;
+}
+.content>.bz>.bz-wen>.vid>.sp>.xz{
+	width: 75px;
+    height: 84px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -42px;
+    margin-left: -38px;
+    background-image: url(../img/img4/playBtn1.png);
+    z-index: 14;
+    background-size: 100% 100%;
+    animation: xz 3s linear 0s infinite;
+}
+.content>.bz>.bz-wen>.vid>.sp>.btn{
+	width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -26px;
+    margin-left: -26px;
+    background-image: url(../img/img4/playBtn2.png);
+    z-index: 15;
+    background-size: 100% 100%;
+    cursor:pointer;
+}
+.content>.bz>.bz-wen>.vid>.bt{
+	position: relative;
+}
+.content>.bz>.bz-wen>.vid>.bt>img{
+	position: absolute;
+	top: -50px;
+	right: 225px;
+}
+.content>.bz-list{
+	width: 160px;
+	height: 650px;
+	/*margin-top: -400px;*/
+	background-image: url(../img/img4/rightNav.png);
+	background-size: 100% 100%;
+	position: absolute;
+	right: 25px;
+	top: 125px;
+	z-index: 14;
+	overflow: hidden;
+}
+.content>.bz-list>ul{
+	list-style: none;
+	position: absolute;
+	right: 42px;
+	top: 200px;
+}
+.content>.bz-list>ul>.zj{
+	margin-bottom: 8px;
+	cursor:pointer;
+}
+.content>.bz-list>ul>.zj>img{
+	width: 70px;
+	height: 70px;
+}
+.content>.tk{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0%;
+	z-index: 16;
+	background-color: rgba(0,0,0,0.6);
+	display: none;
+}
+.content>.tk>video{
+	width: 800px;
+	height: 450px;
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 16;
+}
+.content>.tk>.close{
+	position: absolute;
+	top: 105px;
+	transform: translateY(-50%);
+	right: 225px;
+	cursor:pointer;
+	z-index: 99;
+}
+.content>.hl{
+	display: none;
+}
+.content>.hl>.bz-bg{
+	background-image: url(../img/img4/hlbg.png);
+}
+.content>.hl>.bz-tu{
+	background-image: url(../img/img4/hl.png);
+}
+
+.content>.tsz{
+	display: none;
+}
+.content>.tsz>.bz-bg{
+	background-image: url(../img/img4/tszbg.png);
+}
+.content>.tsz>.bz-tu{
+	background-image: url(../img/img4/tsz.png);
+}
+
+.content>.cm{
+	display: none;
+}
+.content>.cm>.bz-bg{
+	background-image: url(../img/img4/cmbg.png);
+}
+.content>.cm>.bz-tu{
+	background-image: url(../img/img4/cm.png);
+}
+
+/*背景转盘*/
+@keyframes cir1Ani{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+@keyframes cir2Ani{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+/*人物简介从两边进入*/
+@keyframes fadeInLeft{
+	0%{
+	opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+	}
+	100%{
+	opacity: 1;
+    transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes fadeInRight{
+	0%{
+	opacity: 0;
+    transform: translate3d(100%, 0, 0);
+	}
+	100%{
+	opacity: 1;
+    transform: translate3d(0, 0, 0);
+	}
+}
+/*视频播放上面的小圆圈旋转*/
+@keyframes xz{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+/*底部*/
+#foot{
+	width: 100%;
+	height: 250px;
+	background: #181a2f;
+}

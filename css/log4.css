@@ -1,0 +1,225 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+video{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.content{
+	padding-top: 120px;
+	box-sizing: border-box;
+}
+.content>.main{
+	width: 400px;
+	height: 418px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.content>.main>.log{
+	width: 340px;
+	margin: 0px auto;
+	font-size: 14px;
+	overflow: hidden;
+}
+.content>.main>.log>.acc{
+	height: 65px;
+}
+
+.content>.main>.log>.acc>.err{
+	overflow: hidden;
+	color: rgb(215,32,32);
+	display: none;
+}
+.content>.main>.log>.err>img{
+	margin-right: 5px;
+	position: relative;
+	top: 1px;
+	
+}
+.content>.main>.log>.acc>input{
+	height: 38px;
+	width: 337px;
+	line-height: 36px;
+	font-size: 16px;
+	outline:none;
+	background-color: rgba(255,255,255,0.4);
+	color: #333;
+	text-indent: 1em;
+	/*margin-top: 20px;*/
+	border: 1.5px solid #5a5a5a;
+}
+.content>.main>.log>.tiao{
+	font-size: 13px;
+	/*margin-top: 20px;*/
+	color: white;
+}
+.content>.main>.log>.tiao>input{
+	position: relative;
+	top: 2px;
+}
+.content>.main>.log>.tiao>span>a{
+	text-decoration: none;
+	color: red;
+}
+.content>.main>.log>.tiao>span>a:hover{
+	text-decoration:underline;
+}
+.content>.main>.log>.dl{
+	width: 340px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	background: linear-gradient(#ff695d,#ce0000);
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	margin-top: 10px;
+	border-radius: 2px;
+}
+.content>.main>.log>.zh{
+	font-size: 14px;
+	text-align: center;
+	margin-top: 15px;
+	color: white;
+}
+.content>.main>.log>.zh>.reg>a{
+	text-decoration: none;
+	color: rgb(215,32,32);
+	cursor: pointer;
+}
+.content>.main>.log>.zh>.reg>a:hover{
+	text-decoration: underline;
+}
+.content>.main>.log>.disan{
+	margin-top: 30px;
+	text-align: center;
+	color: white;
+}
+.content>.main>.log>.disan>ul{
+	width: 150px;
+	list-style: none;
+	margin: 20px auto 0px;
+}
+.content>.main>.log>.disan>ul>li{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: slategray;
+	float: left;
+	margin-right: 20px;
+}
+.content>.main>.log>.disan>ul>li:hover{
+	background-color: rgb(215,32,32);
+}
+.content>.main>.log>.disan>ul>li>img{
+	width: 22px;
+	height: 22px;
+	position: relative;
+	top: 3px;
+	left: 0px;
+}
+.erwm{
+	position: relative;
+}
+.erwm img{
+	position: absolute;
+}
+.erwm>.dah{
+	right: 0;
+	bottom: 75px;
+}
+.erwm:hover>.xiaz{
+	display: block;
+}
+.erwm>.xiaz{
+	right: 10px;
+	bottom: -55px;
+	display: none;
+	animation: fadeInDown 0.3s both 0.3s;
+}
+.erwm>.xiaz:hover{
+	display: block;
+}
+@keyframes fadeInDown{
+	0%{
+	opacity: 0;
+	}
+	100%{
+	opacity: 1;
+	}
+}
+
+#index{
+	width: 105px;
+	height: 105px;
+	position: absolute;
+	top: 0;
+	left: 200px;
+}
+.i_a{
+	position: relative;
+	width: 105px;
+	height: 105px;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 1s;
+}
+.i_a img,.i_a a,.i_xiala{
+	position: absolute;
+	display: block;
+}
+.i_a a{
+	text-decoration: none;
+}
+.i_a .img1{
+	width: 155px;
+	top: -25px;
+	left: -25px;
+	animation: xuanzhuan 15s infinite linear;
+}
+.i_a a{
+	width: 105px;
+	height: 105px;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	line-height: 105px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 3px 3px 1px gold;
+}
+#index:hover .i_xiala{
+	opacity: 0;
+	transition: all 2s;
+}
+#index:hover .i_a{
+	opacity: 1;
+	transition: all 2s;
+	z-index: 2;
+}
+.i_xiala{
+	opacity: 1;
+	top: 0;
+	left: 0;
+	transition: all 1s;
+}
+@keyframes xuanzhuan{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+

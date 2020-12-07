@@ -1,0 +1,305 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 大主体 */
+.wrap{
+	width: 1200px;
+	margin: 0 auto 0;
+}
+/* 头部 */
+.head{
+	width: 1200px;
+	height: 240px;
+	overflow: hidden;
+	position: relative;
+}
+.head .details_img{
+	position: absolute;
+	height: 240px;
+	left: -360px;
+}
+/* 主体部分 */
+.content{
+	width: 1000px;
+	margin: 0 auto;
+}
+.content .con_back{
+	height: 40px;
+	width: 103px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.content .con_back a{
+	display: inline-block;
+}
+.content .con_back .back_img{
+	margin: -839px 0 0 -1080px;
+}
+.content .date_share{
+	color: #b8b7b6;
+	font-family: 'Microsoft Yahei';
+	font-size: 14px;
+	width: 1000px;
+	height: 28px;
+	line-height: 25px;
+	width: 1000px;
+	border-bottom: 0.5px dotted #aa916d;
+	margin: 15px 0;
+}
+.content .date_share .time{
+	float: left;
+}
+
+/* 修改 */
+.content .date_share .share_article{
+	width: 160px;
+	float: right;
+	height: 25px;
+	margin-right: 20px;
+}
+.content .date_share .share_article .share_blog,.share_WeChat,.share_QQ{
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	margin: 2px 8px 0 0;
+	background-size: 21px 21px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.content .date_share .share_article .share_txt{
+	float: left;
+}
+.content .date_share .share_article .share_icon{
+	float: right;
+}
+.content .date_share .share_article .share_WeChat img{
+	margin-left: -29px;
+}
+.content .date_share .share_article .share_QQ img{
+	margin-left: -59px;
+}
+.content .date_share .share_article .share_blog img:hover{
+	filter: brightness(125%);
+}
+.content .date_share .share_article .share_WeChat img:hover{
+	filter: brightness(125%);
+}
+.content .date_share .share_article .share_QQ img:hover{
+	filter: brightness(125%);
+}
+
+
+.content h3{
+	color: #616161;
+	font-size: 28px;
+	font-family: 'Microsoft Yahei';
+	text-align: center;
+	margin: 40px 0 30px 0;
+}
+.content .con_text{
+	width: 1000px;
+	line-height: 30px;
+	color: #727171;
+	font-size: 16px;
+	font-family: '宋体';
+	text-indent: 2em;
+}
+.content .con_textF{
+	text-align: center;
+	font-weight: bold;
+	font-size: 22px;
+}
+.content .con_textT{
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+/* 视频 */
+.content .videoPlayer{
+	width: 550px;
+	height: 309px;
+	position: relative;
+	margin: 15px 225px;
+	overflow: hidden;
+}
+.content .videoPlayer .play_list{
+	position: absolute;
+	width: 180px;
+	height: 618px;
+	background: rgba(255,255,255,0.1);
+	z-index: 3;
+	list-style: none;
+	transition: all 0.6s;
+	left: -180px;
+}
+.content .videoPlayer .play_list li{
+	margin: 10px 10px;
+	position: relative;
+	width: 160px;
+	height: 90px;
+}
+.content .li_video .v_small{
+	position: absolute;
+	width: 160px;
+	height: 90px;
+}
+.content .li_video .v_small .v_img{
+	width: 160px;
+	height: 90px;
+	filter: brightness(80%);
+}
+.content .li_video a{
+	color: #cfcfcf;
+	text-decoration: none;
+}
+.content .li_video .mask{
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	font-size: 13px;
+	font-family: 'Microsoft Yahei';
+	width: 160px;
+	height: 90px;
+	line-height: 18px;
+	background: rgba(255,255,255,0.1);
+	cursor: pointer;
+}
+.content .li_video .mask .mask_txt{
+	width: 140px;
+	height: 40px;
+	line-height: 20px;
+	margin: 45px 5px 0 5px;
+	padding: 0 5px;
+	/* 文字超过文本框以省略号显示 */
+	overflow:hidden;
+	text-overflow:ellipsis;
+	/* 设置文本盒子适应父级元素的大小(即作为弹性伸缩盒子存在) */
+	display: -webkit-box;
+	/* 设置弹性盒子中子元素的排列方式 */
+	-webkit-box-orient: vertical;
+	/* 设置弹性盒子中文本的显示行数 */
+	-webkit-line-clamp: 2;
+}
+.content .li_video:hover .mask{
+	background: rgba(255,255,255,0);
+}
+.content .li_video .mask:hover .mask_txt{
+	color: #FFFFFF;
+}
+
+.content .videoPlayer .play_list .arrowTop,.arrowBottom{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	z-index: 10;
+	left: 80px;
+	display: none;
+}
+.content .videoPlayer .play_list .arrowTop{
+	top: 0;
+	background: url(../img/img3/arTopW.png) no-repeat;
+}
+.content .videoPlayer .play_list .arrowBottom{
+	top: 293px;
+	background: url(../img/img3/arBottomW.png) no-repeat;
+}
+.content .videoPlayer .play_list .arrowTop:hover{
+	background: url(../img/img3/arTopO.png) no-repeat;
+}
+.content .videoPlayer .play_list .arrowBottom:hover{
+	background: url(../img/img3/arBottomO.png) no-repeat;
+}
+
+.content .videoPlayer .arrowR{
+	position: absolute;
+	width: 20px;
+	height: 30px;
+	z-index: 10;
+	left: 0px;
+	top: 149.5px;
+	border-radius: 0 20px 20px 0;
+	background: rgba(255,255,255,0.1);
+	transition: all 0.6s;
+}
+.content .videoPlayer .arrowR:hover{
+	background: rgba(255,255,255,0.15);
+}
+
+
+
+.content .videoPlayer .arrowR .arrRight_icon{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url(../img/img3/arRightW.png) no-repeat;
+	margin: 7px 0 0 0px;
+}
+.content .videoPlayer .arrowR:hover .arrRight_icon{
+	background:url(../img/img3/arRightO.png) no-repeat;
+}
+
+
+
+.content .introde_box,.introduce_img,.introduce_mask{
+	width: 550px;
+	height: 309px;
+}
+.content .introde_box{
+	position: relative;
+	margin: 15px 225px;
+	transition: all 0.6s;  
+	overflow: hidden;
+	transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+.content .introde_box:hover{
+	border-radius: 50%;
+}
+.content .introduce_img,.introduce_mask{
+	position: absolute;
+	transition: all 0.6s;
+}
+.content .introduce_mask{
+	top: 309px;
+	background: rgba(0,0,0,0.01);
+	transition: all 0.6s;
+}
+.content .introduce_mask .in_mask_text{
+	width: 200px;
+	line-height: 50px;
+	text-align: center;
+	color: #EEEEEE;
+	margin: 260px auto 0;
+	font-size: 20px;
+	font-family: 宋体;
+	letter-spacing: 3px;
+}
+.content .introde_box:hover .introduce_mask{
+	top: 0;
+}
+.content .introde_box:hover .introduce_img{
+	filter: brightness(120%);
+}
+
+.content .con_bottom{
+	font-size: 16px;
+	font-family: 'Microsoft Yahei';
+	color: #727171;
+	line-height: 28px;
+	margin: 10px 0;
+}
+.content .con_bottom span{
+	display: inline-block;
+	line-height: 28px;
+	width: 480px;
+}
+.content .con_bottom a{
+	color: #969696;
+	text-decoration: none;
+}
+.content .con_bottom a:hover{
+	color: #333333;
+	text-decoration: underline;
+}
